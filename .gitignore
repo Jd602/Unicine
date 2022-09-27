@@ -1,4 +1,5 @@
 /.idea/
 /backend/build/
 *.class
-resources/application.properties
+/resources/application.properties
+/.gradle/

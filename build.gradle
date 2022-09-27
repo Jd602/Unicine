@@ -13,7 +13,7 @@ allprojects{
     group 'co.edu.uniquindio.unicine'
     version '1.0-SNAPSHOT'
     description 'Unicine es cadena de cines en Colombia'
-    //sourceCompatibility '11'
+
     repositories {
         mavenCentral()
     }
