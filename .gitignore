@@ -1,0 +1,4 @@
+/.idea/
+/backend/build/
+*.class
+resources/application.properties
