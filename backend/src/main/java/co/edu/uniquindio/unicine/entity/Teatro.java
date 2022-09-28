@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Entity
@@ -24,10 +26,14 @@ public class Teatro implements Serializable {
     @Column(nullable = false)
     private String direccion;
 
-
-
     @ManyToOne
     private Ciudad ciudad;
+
+    @OneToMany(mappedBy = "teatro")
+    private List<Sala> salas = new ArrayList<>();
+
+    @OneToMany(mappedBy = "teatro")
+    private List<Telefono> telefonos;
 
     @Override
     public boolean equals(Object o) {
